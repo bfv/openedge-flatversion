@@ -1,0 +1,13 @@
+name: 'OpenEdge Flat Version'
+description: 'Github action turning an OpenEdge version into a flat version string (12.8.2 --> 128)'
+inputs:
+  version:
+    description: 'OpenEdge version string'
+    required: true
+outputs:
+  flat-version:
+    description: 'Flat version string'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+  
