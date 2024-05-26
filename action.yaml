@@ -6,7 +6,9 @@ inputs:
     required: true
 outputs:
   flat-version:
-    description: 'Flat version string'
+    description: 'Flat version string (12.8.2 --> 128)'
+  release-version:
+    description: 'Release version string (12.8.2 --> 12.8)'
 runs:
   using: 'node20'
   main: 'dist/index.js'

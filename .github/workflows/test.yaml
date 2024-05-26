@@ -24,6 +24,20 @@ jobs:
         with:
           version: '12.8.2'
       
-      - name: Check result
-        run: echo "Flat version is ${{ steps.unit-test.outputs.flat-version }}"
+      - name: Check result, flat version
+        run: |
+          echo "flat-version is ${{ steps.unit-test.outputs.flat-version }}"
+          if [[ "${{ steps.unit-test.outputs.flat-version }}" != "128" ]]; then
+            echo "flat-version is not 128"
+            exit 1
+          fi
+
+      - name: Check result, release version
+        run: |
+          echo "release-version is ${{ steps.unit-test.outputs.release-version }}"
+          if [[ "${{ steps.unit-test.outputs.release-version }}" != "12.8" ]]; then
+            echo "release-version is not 12.8"
+            exit 1
+          fi
+      
         
