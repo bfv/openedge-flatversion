@@ -12,7 +12,7 @@ Github action turning an OpenEdge version into a flat version string and a relea
 ```
 The results can be used like:
 ```
-echo "flat-version is ${{ steps.get-oeversion.outputs.flat-version }}"
-echo "release-version is ${{ steps.get-oeversion.outputs.release-version }}"
+echo "flat-version is ${{ steps.get-oeversion.outputs.flat-version }}"  # 128
+echo "release-version is ${{ steps.get-oeversion.outputs.release-version }}"  # 12.8
 ```
 
