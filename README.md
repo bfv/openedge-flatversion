@@ -14,5 +14,7 @@ The results can be used like:
 ```
 echo "flat-version is ${{ steps.get-oeversion.outputs.flat-version }}"  # 128
 echo "release-version is ${{ steps.get-oeversion.outputs.release-version }}"  # 12.8
+echo "base-version is ${{ steps.get-oeversion.outputs.base-version }}"  # 12.8.0
+
 ```
 

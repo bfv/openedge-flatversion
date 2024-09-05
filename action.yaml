@@ -9,6 +9,8 @@ outputs:
     description: 'Flat version string (12.8.2 --> 128)'
   release-version:
     description: 'Release version string (12.8.2 --> 12.8)'
+  base-version:
+    description: 'Base version string (12.8.2 --> 12.8.0)'
 runs:
   using: 'node20'
   main: 'dist/index.js'

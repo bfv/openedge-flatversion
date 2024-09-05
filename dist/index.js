@@ -26821,6 +26821,11 @@ try {
   const releaseVersion = parts[0] + "." + parts[1];
   console.log(`release-version: ${version} --> ${releaseVersion}`);
   core.setOutput('release-version', releaseVersion);
+
+  const baseVersion = parts[0] + "." + parts[1];
+  console.log(`base-version: ${version} --> ${baseVersion}`);
+  core.setOutput('base-version', baseVersion);
+
 }
 catch (error) {
   core.setFailed(error.message);
