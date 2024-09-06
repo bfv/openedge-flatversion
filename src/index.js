@@ -14,7 +14,7 @@ try {
   console.log(`release-version: ${version} --> ${releaseVersion}`);
   core.setOutput('release-version', releaseVersion);
 
-  const baseVersion = parts[0] + "." + parts[1];
+  const baseVersion = parts[0] + "." + parts[1] + ".0";
   console.log(`base-version: ${version} --> ${baseVersion}`);
   core.setOutput('base-version', baseVersion);
 

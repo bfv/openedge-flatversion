@@ -40,4 +40,12 @@ jobs:
             exit 1
           fi
       
+      - name: Check result, base version
+        run: |
+          echo "base-version is ${{ steps.unit-test.outputs.base-version }}"
+          if [[ "${{ steps.unit-test.outputs.base-version }}" != "12.8.0" ]]; then
+            echo "base-version is not 12.8.0"
+            exit 1
+          fi
         
+          
