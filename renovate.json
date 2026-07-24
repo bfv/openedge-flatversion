@@ -6,7 +6,7 @@
   ],
   "packageRules": [
     {
-      "matchMatchers": ["github-actions"],
+      "matchManagers": ["github-actions"],
       "groupName": "GitHub Actions",
       "schedule": ["before 8am on monday"]
     }
