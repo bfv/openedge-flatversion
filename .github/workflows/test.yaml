@@ -20,7 +20,7 @@ jobs:
 
       - name: Check unit tests
         id: unit-test
-        uses: bfv/openedge-flatversion@e540960183b71e4dfc69392df036d7165ade5c45 # main
+        uses: bfv/openedge-flatversion@57dfd5aab2ce7d1ba4befecd27d0dc85f9ba9a16 # main
         with:
           version: '12.8.2'
       
