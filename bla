@@ -1,6 +1,0 @@
-if [[ "12.8.0" < "12.8.4" ]]; then
-  echo "true"
-else 
-  echo "false"
-fi
-
